@@ -129,6 +129,7 @@ img {
     display: block;
     margin: auto;
     border-radius: 50%;
+    position: absolute;
 }
 
 @media (min-width: 992px){
