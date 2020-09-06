@@ -55,7 +55,7 @@ body {
     font-family: arial;
 }
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
     margin: 10px 0;
@@ -145,6 +145,9 @@ img {
     img {
         width: 130px;
         height: 130px;
+    }
+    h1{
+        font-size: 60px;
     }
 }
 
