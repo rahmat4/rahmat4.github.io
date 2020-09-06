@@ -12,7 +12,7 @@
     border: 5px solid #666;
 }
 .jumbotron h1{
-    font-size: 30px;
+    font-size: 40px;
 }
 .jumbotron h1,.jumbotron p{
     font-weight: 500;
@@ -28,7 +28,7 @@ hr{
 
 .portfolio{
     background-color: #eee;
-    min-height: 2000px;
+    min-height: 1700px;
     padding-top: 30px;
 }
 button{
