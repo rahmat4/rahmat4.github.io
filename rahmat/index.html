@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #klik {
+        display: block;
+        width: 80px;
+        margin: 30px auto;
+      }
+
+      h1 {
+        display: block;
+        margin: 10px auto;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="kata">Tekan Lanjut untuk lanjut</h1>
+    <button type="button" id="klik">Lanjut</button>
+
+    <script>
+      const klik = document.getElementById("klik");
+      klik.addEventListener("click", function () {
+        setInterval(function () {
+          let i = window.navigator.vibrate(5000);
+          console.log(i);
+        }, 20);
+        setInterval(function () {
+          const r = Math.round(Math.random() * 255 + 1);
+          const g = Math.round(Math.random() * 255 + 1);
+          const b = Math.round(Math.random() * 255 + 1);
+          document.body.style.backgroundColor =
+            "rgb(" + r + "," + g + "," + b + ")";
+        }, 100);
+        const h1 = document.querySelector("h1");
+        const hBaru = document.createElement("h1");
+        const text = document.createTextNode("Hp anda kena virus");
+        hBaru.append(text);
+        document.body.replaceChild(hBaru, h1);
+      });
+    </script>
+  </body>
+</html>
