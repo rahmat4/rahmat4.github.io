@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  width: 300px;
+  height: 430px;
+  margin: 50px auto;
+  border-radius: 20px;
+  border: 1px solid aqua;
+  box-sizing: border-box;
+  z-index: -99999;
+  background-color: #000;
+  box-shadow: 0 0 10px aqua;
+}
+
+.header {
+  width: 90%;
+  height: 68px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 1px solid aqua;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 0 0 10px aqua;
+}
+
+.body {
+  margin: 5px auto;
+  width: 90%;
+  display: flex;
+  height: 300px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.baris1,
+.baris2,
+.baris3,
+.baris4,
+.baris5 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px;
+  justify-content: space-between;
+}
+
+button {
+  margin-right: 5px;
+  transition: 0.5s;
+}
+button:hover {
+  box-shadow: 0 0 15px aqua;
+  transform: scale(1.1);
+}
+
+.baris1 #c {
+  flex: 3;
+}
+
+.baris1 #tombol {
+  flex: 1;
+}
+
+.baris2 #tombol {
+  flex: 1;
+}
+
+.baris3 #tombol {
+  flex: 1;
+}
+
+.baris4 #tombol {
+  flex: 1;
+}
+
+.baris5 #nol {
+  flex: 1;
+}
+
+.baris5 #hasil {
+  flex: 1;
+}
