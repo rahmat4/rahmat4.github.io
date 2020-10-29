@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Map API</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrmSlyy14I89YqPaDlcGygaIFbLjh1VFc&callback=initMap&libraries=&v=weekly"
+    defer></script>
+  <style type="text/css">
+    .container {
+      width: 60%;
+      height: 70%;
+      border: 5px solid rgb(92, 88, 88);
+      box-sizing: border-box;
+      border-radius: 2px;
+    }
+
+    #map {
+      height: 100%;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="map"></div>
+  </div>
+
+  <script>
+    function initMap() {
+      const lokasi = new google.maps.LatLng(-8.5830695, 116.3202515);
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: lokasi,
+        zoom: 9,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+    }
+  </script>
+</body>
+
+</html>
