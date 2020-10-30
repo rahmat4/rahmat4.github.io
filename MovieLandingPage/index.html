@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Movie Landing Page</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"><img src="aset/logo.png"></a>
+    <div class="toggle">
+      <img src="aset/toggle.png">
+    </div>
+  </header>
+  <div class="banner">
+    <div class="content">
+      <h2>Put On a <span>Happy</span> Face</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quos qui aperiam voluptatum harum rerum
+        nobis ipsum. Minima quos commodi cupiditate, dignissimos minus veniam nemo nihil aperiam consequatur eius error,
+        autem sed illum dolores magnam natus!</p>
+      <a href="#" class="play" onclick="toggle()"><img src="aset/play.png">Watch Trailer</a>
+      <div class="slide"></div>
+      <ul class="sci">
+        <li><a href="#"><img src="aset/facebook.png"></a></li>
+        <li><a href="#"><img src="aset/twitter.png"></a></li>
+        <li><a href="#"><img src="aset/instagram.png"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="trailer">
+    <video src="aset/JOKER - Final Trailer - Now Playing In Theaters(1080P_HD).mp4" controls="true"></video>
+    <img src="aset/close.png" class="close" onclick="toggle()">
+  </div>
+
+  <script>
+    function toggle() {
+      const trailer = document.querySelector('.trailer');
+      trailer.classList.toggle('active');
+      const video = document.querySelector('video');
+      video.currentTime = 0;
+      video.pause();
+    }
+  </script>
+</body>
+
+</html>
